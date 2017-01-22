@@ -1,6 +1,6 @@
 require 'faker'
 
-genders = ['Female', 'Male', 'Agender', 'Gender fluid', 'Gender Queer', 'Intersex', 'Non Binary', 'N/A']
+genders = ['Female', 'Male', 'Agender', 'Gender Fluid', 'Gender Queer', 'Intersex', 'Non Binary', 'N/A']
 
 20.times {User.create!(name: Faker::Name.first_name, age: rand(18..50), gender: genders.sample, summary: Faker::Hipster.sentence)}
 
