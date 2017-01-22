@@ -14,7 +14,7 @@ class Api::V1::UsersController < Api::V1::BaseController
 	def update
 		user = User.find(params["id"])
 		user.update_attributes(user_params)
-		respond_with, json: user
+		respond_with user, json: user
 	end
 
 	private
